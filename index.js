@@ -28,11 +28,11 @@ module.exports = function helpers(groups, options) {
   define(module.exports, 'handlebars', hbs);
 
   if (groups) {
-    groups.forEach(function(key) {
+    groups.forEach(function (key) {
       hbs.registerHelper(lib[key]);
     });
   } else {
-    forIn(lib, function(group, key) {
+    forIn(lib, function (group, key) {
       hbs.registerHelper(group);
     });
   }
@@ -44,8 +44,8 @@ module.exports = function helpers(groups, options) {
  * Expose helper groups
  */
 
-forIn(lib, function(group, key) {
-  define(module.exports, key, function(options) {
+forIn(lib, function (group, key) {
+  define(module.exports, key, function (options) {
     options = options || {};
     var hbs = options.handlebars || options.hbs || require('handlebars');
     define(module.exports, 'handlebars', hbs);

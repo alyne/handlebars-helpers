@@ -15,12 +15,12 @@ var utils = module.exports;
  * @return {String}
  */
 
-utils.read = function(fp) {
+utils.read = function (fp) {
   return fs.readFileSync(fp, 'utf8');
 };
 
 /**
- * Returns a function for reading a test fixture 
+ * Returns a function for reading a test fixture
  * of the given `type` at the given `filepath`.
  *
  * @param {String} `type`
@@ -28,8 +28,8 @@ utils.read = function(fp) {
  * @return {String}
  */
 
-utils.fixture = function(type) {
-  return function(fp) {
+utils.fixture = function (type) {
+  return function (fp) {
     return utils.read('test/fixtures/' + type + '/' + fp);
   };
 };
@@ -43,8 +43,8 @@ utils.fixture = function(type) {
  * @return {String}
  */
 
-utils.expected = function(type) {
-  return function(fp) {
+utils.expected = function (type) {
+  return function (fp) {
     return utils.read('test/expected/' + type + '/' + fp);
   };
 };

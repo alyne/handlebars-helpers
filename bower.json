@@ -16,13 +16,8 @@
     "url": "https://github.com/helpers/handlebars-helpers/issues"
   },
   "license": "MIT",
-  "files": [
-    "index.js",
-    "lib"
-  ],
-  "main": [
-    "index.js"
-  ],
+  "files": ["index.js", "lib"],
+  "main": ["index.js"],
   "dependencies": {
     "arr-flatten": "^1.1.0",
     "array-sort": "^0.1.4",
