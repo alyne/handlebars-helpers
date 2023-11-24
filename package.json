@@ -81,7 +81,7 @@
     "for-own": "^1.0.0",
     "get-object": "^0.2.0",
     "get-value": "^3.0.1",
-    "handlebars": "^4.0.11",
+    "handlebars": "^4.7.8",
     "handlebars-helper-create-frame": "^0.1.0",
     "handlebars-utils": "^1.0.6",
     "has-value": "^2.0.2",
@@ -196,7 +196,7 @@
     }
   },
   "resolutions": {
-    "autolinker": "^3.16.1",
-    "highlight.js": "^10.4.1"
+    "autolinker": "^4.0.0",
+    "highlight.js": "^11.9.0"
   }
 }
