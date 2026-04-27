@@ -94,7 +94,6 @@ Currently **189 helpers** in **20 categories**:
 * **[i18n](#i18n)** ([code](lib/i18n.js) | [unit tests](test/i18n.js))
 * **[inflection](#inflection)** ([code](lib/inflection.js) | [unit tests](test/inflection.js))
 * **[logging](#logging)** ([code](lib/logging.js) | [unit tests](test/logging.js))
-* **[markdown](#markdown)** ([code](lib/markdown.js) | [unit tests](test/markdown.js))
 * **[match](#match)** ([code](lib/match.js) | [unit tests](test/match.js))
 * **[math](#math)** ([code](lib/math.js) | [unit tests](test/math.js))
 * **[misc](#misc)** ([code](lib/misc.js) | [unit tests](test/misc.js))
@@ -241,13 +240,6 @@ Visit the: [code](lib/logging.js) | [unit tests](test/logging.js) | [issues](htt
 * **[bold](#bold)** ([code](lib/logging.js#Lundefined) | [no tests])
 * **[_debug](#_debug)** ([code](lib/logging.js#Lundefined) | [no tests])
 * **[_inspect](#_inspect)** ([code](lib/logging.js#Lundefined) | [no tests])
-
-### [markdown helpers](#markdown)
-
-Visit the: [code](lib/markdown.js) | [unit tests](test/markdown.js) | [issues](https://github.com/helpers/handlebars-helpers/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+markdown+helpers))
-
-* **[markdown](#markdown)** ([code](lib/markdown.js#Lundefined) | [tests](test/markdown.js#L10))
-* **[md](#md)** ([code](lib/markdown.js#L55) | [tests](test/markdown.js#L18))
 
 ### [match helpers](#match)
 
@@ -1604,43 +1596,6 @@ Returns an ordinalized number as a string.
 ## logging
 
 [logging-helpers](https://github.com/helpers/logging-helpers).
-
-## markdown
-
-### [{{markdown}}](lib/markdown.js#L28)
-
-Block helper that converts a string of inline markdown to HTML.
-
-**Params**
-
-* `context` **{Object}**
-* `options` **{Object}**
-* `returns` **{String}**
-
-**Example**
-
-```handlebars
-{{#markdown}}
-# Foo
-{{/markdown}}
-<!-- results in: <h1>Foo</h1> -->
-```
-
-### [{{md}}](lib/markdown.js#L55)
-
-Read a markdown file from the file system and inject its contents after converting it to HTML.
-
-**Params**
-
-* `context` **{Object}**
-* `options` **{Object}**
-* `returns` **{String}**
-
-**Example**
-
-```handlebars
-{{md "foo/bar.md"}}
-```
 
 ## match
 
